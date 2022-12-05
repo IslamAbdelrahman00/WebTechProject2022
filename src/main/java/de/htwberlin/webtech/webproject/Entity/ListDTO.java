@@ -11,7 +11,7 @@ public class ListDTO {
     public ListDTO() {
     }
 
-    public ListDTO(String author, String list_name, List<String> list_items) {
+    public ListDTO( String list_name, List<String> list_items) {
         this.list_name = list_name;
         this.list_items = list_items;
     }

@@ -17,7 +17,7 @@ public class ListEntity {
     @Column(name = "list_name", nullable = false)
     private String list_name;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "list_id")
     private List<ItemEntity> listItems = new ArrayList<ItemEntity>();
 
