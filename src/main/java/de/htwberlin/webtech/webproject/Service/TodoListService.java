@@ -13,11 +13,11 @@ import java.util.Optional;
 @Service
 public class TodoListService {
 
-    @Autowired
     private final TodoListRepository todoRepository;
     private final ItemService itemService;
     private RestTemplate restTemplate;
 
+    @Autowired
     public TodoListService(TodoListRepository repository, ItemService itemService) {
         this.todoRepository = repository;
         this.itemService = itemService;

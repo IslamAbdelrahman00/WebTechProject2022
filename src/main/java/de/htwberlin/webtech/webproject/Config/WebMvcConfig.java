@@ -10,62 +10,41 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/*")
+        registry.addMapping("/**")
                 .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
                 .allowedOrigins(
                         "http://localhost:3000",
                         "https://to-do-app-frontend.herokuapp.com"
                 );
-        registry.addMapping("*")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/*/*")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/*/*/*")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/*/*/*/*")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/todolists/create")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/todolists/create/*")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
-        registry.addMapping("/createlist")
-                .allowedMethods("*")
-                .allowedHeaders("Access-Control-Allow-Origin")
-                .allowedOrigins(
-                        "http://localhost:3000",
-                        "https://to-do-app-frontend.herokuapp.com"
-                );
+//        registry.addMapping("*")
+//                .allowedMethods("*")
+//                .allowedHeaders("Access-Control-Allow-Origin")
+//                .allowedOrigins(
+//                        "http://localhost:3000",
+//                        "https://to-do-app-frontend.herokuapp.com"
+//                );
+//        registry.addMapping("/*/*")
+//                .allowedMethods("*")
+//                .allowedHeaders("Access-Control-Allow-Origin")
+//                .allowedOrigins(
+//                        "http://localhost:3000",
+//                        "https://to-do-app-frontend.herokuapp.com"
+//                );
+//        registry.addMapping("/*/*/*")
+//                .allowedMethods("*")
+//                .allowedHeaders("Access-Control-Allow-Origin")
+//                .allowedOrigins(
+//                        "http://localhost:3000",
+//                        "https://to-do-app-frontend.herokuapp.com"
+//                );
+//        registry.addMapping("/*/*/*/*")
+//                .allowedMethods("*")
+//                .allowedHeaders("Access-Control-Allow-Origin")
+//                .allowedOrigins(
+//                        "http://localhost:3000",
+//                        "https://to-do-app-frontend.herokuapp.com"
+//                );
+
     }
 
 }

@@ -15,10 +15,10 @@ import java.util.Optional;
 @Service
 public class ItemService {
 
-    @Autowired
     private final ItemRepository itemRepository;
     private RestTemplate restTemplate;
 
+    @Autowired
     public ItemService(ItemRepository repository) {
         this.itemRepository = repository;
     }
