@@ -2,5 +2,5 @@ spring:
   datasource:
     url: jdbc:h2:mem:db
     username: ${{ secrets.DATASOURCE_USERNAME }}
-    password: ${{ secrets.secrets.SuperSecret }}
+    password: ${{ secrets.DATASOURCE_PASSWORD }}
     driverClassName: org.h2.Driver
